@@ -1,0 +1,34 @@
+{
+    "name": "chenshenchao/palettex",
+    "description": "Yet a PHP Content Management System, powered by Purplex.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chenshenchao",
+            "email": "chenshenchao@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Main\\": "main"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "test"
+        }
+    },
+    "require": {
+        "php": "^7",
+        "chenshenchao/purplex": "^0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "scripts": {
+        "test": [
+            "phpunit --bootstrap vendor/autoload.php --testdox test"
+        ]
+    }
+}
